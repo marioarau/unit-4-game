@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Star Wars RPG Game</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    <img src="assets/images/star_wars2.jpg" class="img_bg">
+    <div id="content">
+        <div id="row">
+            <div class="col-lg-1 mt-lg-0"></div>
+                <img src="assets/images/obi_wan.jpg" class="img1A image-row1" value="0">
+                <div id="score1A" class="score">100</div>
+            </div>
+            <div class="col-lg-1 mt-lg-0">
+                <img src="assets/images/luke_skywalker.jpg" class="img1B image-row1" value="1">
+                <div id="score1B" class="score">200</div>
+            </div>
+            <div class="col-lg-1 mt-lg-0">
+                <img src="assets/images/darth_sidious.jpg" class="img1C image-row1" value="2">
+                <div id="score1C" class="score">300</div>
+            </div>
+            <div class="col-lg-1 mt-lg-0">
+                <img src="assets/images/darth_maul.jpg" class="img1D image-row1" value="3">
+                <div id="score1D" class="score">400</div>
+            </div>
+            <div class="col-lg-8 mt-lg-0">
+            </div>
+        </div>
+        <div id="row">
+            <div class="col-lg-4 mt-lg-0">
+                <div id="yourCharacter">Select Your Character</div>
+            </div>
+            <div class="col-lg-8 mt-lg-0">
+            </div>
+        </div>
+        <div id="row">
+            <div class="col-lg-4 mt-lg-0">
+                <div id="enemiesAvailable">Enemies Available to Attack</div>
+            </div>
+            <div class="col-lg-8 mt-lg-0">
+            </div>
+        </div>
+        <div id="row">
+            <div class="col-lg-1 mt-lg-0">
+                <img src="assets/images/obi_wan.jpg" class="img20 image-row2" value="0">
+                <div id="score20" class="score">100</div>
+            </div>
+            <div class="col-lg-1 mt-lg-0">
+                <img src="assets/images/luke_skywalker.jpg" class="img21 image-row2" value="1">
+                <div id="score21" class="score">100</div>
+            </div>
+            <div class="col-lg-10 mt-lg-0">
+                <img src="assets/images/darth_sidious.jpg" class="img22 image-row2" value="2">
+                <div id="score22" class="score">100</div>
+            </div>
+        </div>
+        <div id="row">
+            <div class="col-lg-4 mt-lg-0">
+                <div id="fightSection">Fight Section</div>
+                	<div id="attackBtn">
+	        			<input type="button" value="Attack" id="attack-button">
+                	</div>
+                <div id="defender">Defender</div>
+            </div>
+            <div class="col-lg-8 mt-lg-0">
+            </div>
+        </div>
+        <div id="row">
+            <div class="col-lg-1 mt-lg-0">
+                <img src="assets/images/obi_wan.jpg" class="img3A">
+                <div id="score3A" class="score">100</div>
+            </div>
+            <div class="col-lg-11 mt-lg-0">
+            </div>
+        </div>
+        <div id="row">
+            <div class="col-lg-6 mt-lg-0">
+                <div id="gameStatus">You have been defeated. Game Over!</div>
+                <div id="restartBtn">
+	        			<input type="button" value="Restart" id="restart-button">
+               	</div>
+            </div>
+            <div class="col-lg-6 mt-lg-0">
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+
+</html>
