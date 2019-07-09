@@ -52,9 +52,51 @@ function generate_score () {
    }
 }
 
+function reInit() {
+
+   //row2_character = [];
+   score = [];
+   console.log("score="+score)
+   generate_score();
+   console.log("score="+score)
+   won = false;
+   loss = false;
+   //$(".img1A").attr("src", yourCharacterList[0][0]);   
+   $(".img1A").show();
+   $("#score1A").show();
+   console.log("score[0]="+score[0]);
+   $("#score1A").text(score[0]);
+   console.log("score[1]="+score[1]);
+   $("#score1B").text(score[1]);
+   console.log("score[2]="+score[2]);
+   $("#score1C").text(score[2]);
+   console.log("score[3]="+score[3]);
+   $("#score1D").text(score[3]);
+   $(".img20").hide();
+   $("#score20").hide();
+   $(".img21").hide();
+   $("#score21").hide();
+   $(".img22").hide();
+   $("#score22").hide();
+   $("#enemiesAvailable").hide();
+   $("#fightSection").hide();
+   $("#attackBtn").hide();
+   $("#defender").hide();
+   $("#gameStatus").hide(); 
+   $(".img3A").hide();
+   $("#score3A").hide();
+   $("#restartBtn").hide();
+};
+
 function init() {
 
+   //row2_character = [];
+   score = [];
+   console.log("score="+score)
    generate_score();
+   console.log("score="+score)
+   won = false;
+   loss = false;
    $(".img1A").attr("src", yourCharacterList[0][0]);   
    $(".img1B").attr("src", yourCharacterList[1][0]);   
    $(".img1C").attr("src", yourCharacterList[2][0]);   
@@ -150,7 +192,14 @@ $('.image-row1').click(function(){
    $(".img1D").hide();
    $("#score1D").hide();
    $(".img1A").attr("src", src);
-
+   yourCharacterList[0][0] = src;
+   yourCharacterList[0][1] = yourCharacterList[numint][1];
+   yourCharacterList[0][2] = score[numint];
+   console.log(yourCharacterList);
+   yourCharacterList.splice(1,3);
+   console.log(yourCharacterList);
+   debugger
+   yourCharacterList.splice()
    //alert("You clicked row 1- Characters")
 
    var j = 0;
